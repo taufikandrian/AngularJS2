@@ -1,0 +1,90 @@
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            columnDefs: [
+                {
+                    targets: [ 0, 1, 2 ],
+                    className: 'mdl-data-table__cell--non-numeric'
+                }
+            ]
+        } );
+    } );
+</script>
+
+
+<div class="main-content" style  style="margin-bottom:-60px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header" data-background-color="purple">
+                            <h4 class="title">Enrollment List</h4>
+                            <p class="category">List of enrollment by {{currentUser.username}} </p>         
+                        </div>                       
+
+                        <div class="card-content table-responsive">
+                            <table class="table mdl-data-table" id="example" cellspacing="0" id="example" cellspacing="0">
+                                <thead class="text-danger">
+                                    <tr>
+                                        <th>   
+                                            Training Name
+                                        </th>
+                                        <th>
+                                            Course Name
+                                        </th>
+                                        <th>
+                                            Trainer
+                                        </th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Status</th>
+                                        <th>Detail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>  
+                                        <td>PGCP - Softwere Requirements</td>
+                                        <td>Softwere Requirements #1</td>
+                                        <td>Made Aditya</td>
+                                        <td>07-Agustus-2017</td>
+                                        <td>08-Agustus-2017</td>
+                                        <td>In Progress</td>
+                                        <td>
+                                            <a href='#'><i class="material-icons" data-toggle="tooltip" title="Detail">info</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>  
+                                        <td>PGCP - Softwere Requirements</td>
+                                        <td>Softwere Requirements #1</td>
+                                        <td>Made Aditya</td>
+                                        <td>07-Agustus-2017</td>
+                                        <td>08-Agustus-2017</td>
+                                        <td>In Progress</td>
+                                        <td>
+                                            <a href='#'><i class="material-icons" data-toggle="tooltip" title="Detail">info</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>  
+                                        <td>PGCP - Softwere Requirements</td>
+                                        <td>Softwere Requirements #1</td>
+                                        <td>Made Aditya</td>
+                                        <td>07-Agustus-2017</td>
+                                        <td>08-Agustus-2017</td>
+                                        <td>In Progress</td>
+                                        <td>
+                                            <a href='#'><i class="material-icons" data-toggle="tooltip" title="Detail">info</i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <user-detail [user]="selectedUser"></user-detail>
+    
