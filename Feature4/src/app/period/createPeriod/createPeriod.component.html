@@ -1,0 +1,45 @@
+<div class="main-content" style  style="margin-bottom:-60px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header" data-background-color="purple">
+                            <h4 class="title">Training Period</h4>
+                            <p class="category">Create of training period</p>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>  
+                                        <td><input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input
+                                            [(ngModel)]="myStartDate"
+                                            ngui-datetime-picker
+                                            date-only="true" class="form-control" placeholder="Start Date" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input
+                                            [(ngModel)]="myEndDate"
+                                            ngui-datetime-picker
+                                            date-only="true" class="form-control" placeholder="End Date" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" aria-label="Checkbox for following text input" />&nbsp; Is this Enrollment Open ?</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="linkCancel" href="/home/period"><button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-default">Cancel</button></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
