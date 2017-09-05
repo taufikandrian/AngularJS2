@@ -38,4 +38,23 @@
         </div>
     </div>
 </div>
+<div *ngIf="!user" class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" data-background-color="purple">
+                        <h4 class="title">DATA NOT FOUND</h4>
+                        <p class="category">Try to edit profile</p>
+                    </div>
+                    <div class="card-content">
+                        
+                    <button (click)="goBack()" class="btn btn-sm btn-primary">Back</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
         
