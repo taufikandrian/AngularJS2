@@ -1,0 +1,55 @@
+<div class="main-content" style  style="margin-bottom:-60px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header" data-background-color="purple">
+                            <h4 class="title">Period List</h4>
+                            <p class="category">List of training period</p>
+                            <button class = "btn btn-primary btn-sm"><a href="/home/period/createPeriod"> Create new</a> </button> 
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table">
+                                <thead class="text-danger">
+                                    <tr>
+                                        <th>Training Name</th>
+                                        <th>Active</th>
+                                        <th>Courses</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Created By</th>
+                                        <th>Updated By</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>  
+                                        <td>Training 1</td>
+                                        <td>No</td>
+                                        <td>2 courses</td>
+                                        <td>10-Agustus-2017</td>
+                                        <td>10-September-2017</td>
+                                        <td>Wimba Agra</td>
+                                        <td>Wimba Agra</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <i class="material-icons" data-toggle="tooltip" title="Edit"><a href="home/period/editPeriod" class="linkIcon">create</a></i>
+                                                <i class="material-icons" data-toggle="tooltip" title="Delete"><a href="#" class="linkIcon">delete_sweep</a></i>
+                                                <i class="material-icons" data-toggle="tooltip" title="Schedule List"><a href="home/period/schedulePeriod" class="linkIcon">view_list</a></i>
+                                                <i class="material-icons" data-toggle="tooltip" title="Eligible Participant"><a href="home/period/eligibleParticipantPeriod" class="linkIcon">accessibility</a></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <user-detail [user]="selectedUser"></user-detail>
+    
