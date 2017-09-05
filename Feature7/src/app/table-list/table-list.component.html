@@ -1,0 +1,40 @@
+<div class="main-content" style  style="margin-bottom:-60px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" data-background-color="purple">
+                        <h4 class="title">User List</h4>
+                        <!-- <p class="category">Click the button to see user's detail. </p> -->
+                    </div>
+                    <div class="card-content table-responsive">
+                        <table class="table">
+                            <thead class="text-danger">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let user of users" 
+                                [class.selected]="user === selectedUser"
+                                (click)="onSelect(user)">
+                                    <td>{{ user.id }}</td>
+                                    <td>{{ user.name }}</td>
+                                    <td>{{ user.email }}</td>
+                                    <td><button (click)="gotoDetail(user)" class="btn btn-primary btn-sm margin=-30px">Detail</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <user-detail [user]="selectedUser"></user-detail> -->
